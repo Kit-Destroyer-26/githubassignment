@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <body>
-        <nav class="navbar">
-            <h1>My Website</h1>
-            <div class="hamburger" onclick="toggleMenu()">■</div>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a> </li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <p>This is my homepage.</p>
-        <img src="https://kaitsuko.com/cdn/shop/articles/Mochis_specialite_japonaise_couteau_haut_de_gamme_9dda9e06-3395-4de0-9cb7-20aab5a8d4c1.jpg?v=1738224355" alt="Mochi">
-        <footer>
-            <p>Look at this awesome footer</p>
-        </footer>
-    </body>
+<body>
+    <nav class="navbar">
+        <h1>My Website</h1>
+        <div class="hamburger" onclick="toggleMenu()">■</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a> </li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <p>This is my homepage.</p>
+    <img src="https://kaitsuko.com/cdn/shop/articles/Mochis_specialite_japonaise_couteau_haut_de_gamme_9dda9e06-3395-4de0-9cb7-20aab5a8d4c1.jpg?v=1738224355"
+        alt="Mochi">
+    <footer>
+        <p>Look at this awesome footer</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
 
 </html>
