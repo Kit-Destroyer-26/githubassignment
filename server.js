@@ -8,6 +8,9 @@ const PORT = 3000
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html')
 })
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/about', (req, res) => {
   res.sendFile(__dirname + '/public/about.html')
@@ -20,6 +23,3 @@ app.get('/contact', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`)
 })
-const path = require('path');
-
-app.use(express.static(path.join(__dirname, 'public')));
